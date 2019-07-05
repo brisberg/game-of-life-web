@@ -8,9 +8,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "tsc": "./node_modules/typescript/bin/tsc gameoflife.ts",
+    "tsc": "./node_modules/typescript/bin/tsc gameoflife.ts --outDir docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run tsc; open index.html"
+    "start": "npm run tsc; open docs/index.html"
   },
   "repository": {
     "type": "git",
