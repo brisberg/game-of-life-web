@@ -1,0 +1,30 @@
+{
+  "name": "game-of-life-web",
+  "version": "1.0.0",
+  "description": "Javascript implementation of Conway's Game of Life for the Disney booth at Anime Expo 2019.",
+  "main": "gameoflife.js",
+  "dependencies": {
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "tsc": "./node_modules/typescript/bin/tsc gameoflife.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run tsc; open index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brisberg/game-of-life-web.git"
+  },
+  "keywords": [
+    "game-of-life",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Brandon Risberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brisberg/game-of-life-web/issues"
+  },
+  "homepage": "https://github.com/brisberg/game-of-life-web#readme"
+}
