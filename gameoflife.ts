@@ -4,16 +4,18 @@ const adjacent: number[][] = [];
 let tableElement: Element;
 
 function setup() {
+    tableElement = document.body.firstElementChild;
+
     for (let i = 0; i < WORLD_SIZE; i++) {
         world[i] = [];
         adjacent[i] = [];
+        const rowEl = tableElement.appendChild(new Element());
         for (let j = 0; j < WORLD_SIZE; j++) {
             world[i][j] = 0;
             adjacent[i][j] = 0;
+            rowEl.appendChild(new HTMLTableDataCellElement());
         }
     }
-
-    tableElement = document.body.firstElementChild;
 
     // load the images?
 
