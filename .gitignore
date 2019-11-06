@@ -1,2 +1,6 @@
+// OSX files
+.DS_Store
+
 node_modules/
-./*.js
+build/*.js
+build/*.js.map

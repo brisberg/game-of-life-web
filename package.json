@@ -4,13 +4,14 @@
   "description": "Javascript implementation of Conway's Game of Life for the Disney booth at Anime Expo 2019.",
   "main": "gameoflife.js",
   "dependencies": {
+    "@types/node": "^12.12.6",
     "typescript": "^3.5.2"
   },
   "devDependencies": {},
   "scripts": {
-    "tsc": "./node_modules/typescript/bin/tsc *.ts -t ES2015 -m es2015 --outDir docs",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run tsc; open docs/index.html"
+    "start": "npm run tsc; open build/index.html"
   },
   "repository": {
     "type": "git",
